@@ -1,0 +1,6 @@
+code,sandbit,bin,layer,position,type,file,labeled_file
+AA11,A,A,1,1,Code128,pipe-barcode-AA11.png,pipe-barcode-AA11-labeled.png
+AA12,A,A,1,2,Code128,pipe-barcode-AA12.png,pipe-barcode-AA12-labeled.png
+AA13,A,A,1,3,Code128,pipe-barcode-AA13.png,pipe-barcode-AA13-labeled.png
+AA14,A,A,1,4,Code128,pipe-barcode-AA14.png,pipe-barcode-AA14-labeled.png
+AA15,A,A,1,5,Code128,pipe-barcode-AA15.png,pipe-barcode-AA15-labeled.png

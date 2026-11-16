@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Inventory Codes — Plates QR &amp; Pipes Barcode</title>
+  <style>
+    :root {
+      --ink: #1a1a1a;
+      --muted: #555;
+      --rule: #ddd;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 24px;
+      font-family: "DejaVu Sans", "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: #f7f7f5;
+    }
+    h1 { font-size: 1.4rem; margin: 0 0 4px; }
+    .sub { color: var(--muted); margin: 0 0 20px; font-size: 0.9rem; }
+    section { margin-bottom: 28px; }
+    h2 {
+      font-size: 1.05rem;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 6px;
+      margin: 0 0 14px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid var(--rule);
+      padding: 12px;
+      text-align: center;
+    }
+    .card img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto 8px;
+    }
+    .code { font-weight: 700; letter-spacing: 0.04em; }
+    .meta { font-size: 0.78rem; color: var(--muted); }
+    @media print {
+      body { background: #fff; padding: 8mm; }
+      .card { break-inside: avoid; border-color: #bbb; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Inventory codes</h1>
+  <p class="sub">Plate QR = column + row + stack (1–15) · Pipe barcode = sandbit + bin + layer + position (L→R)</p>
+
+  <section>
+    <h2>Plates — QR (5)</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="plates-qr/plate-qr-A11.png" alt="QR A11" />
+        <div class="code">A11</div>
+        <div class="meta">Col A · Row 1 · Stack #1</div>
+      </div>
+      <div class="card">
+        <img src="plates-qr/plate-qr-A12.png" alt="QR A12" />
+        <div class="code">A12</div>
+        <div class="meta">Col A · Row 1 · Stack #2</div>
+      </div>
+      <div class="card">
+        <img src="plates-qr/plate-qr-A13.png" alt="QR A13" />
+        <div class="code">A13</div>
+        <div class="meta">Col A · Row 1 · Stack #3</div>
+      </div>
+      <div class="card">
+        <img src="plates-qr/plate-qr-A14.png" alt="QR A14" />
+        <div class="code">A14</div>
+        <div class="meta">Col A · Row 1 · Stack #4</div>
+      </div>
+      <div class="card">
+        <img src="plates-qr/plate-qr-A15.png" alt="QR A15" />
+        <div class="code">A15</div>
+        <div class="meta">Col A · Row 1 · Stack #5</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Pipes — Barcode Code128 (5)</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="pipes-barcode/pipe-barcode-AA11-labeled.png" alt="Barcode AA11" />
+        <div class="code">AA11</div>
+        <div class="meta">Sandbit A · Bin A · Layer 1 · Pos 1</div>
+      </div>
+      <div class="card">
+        <img src="pipes-barcode/pipe-barcode-AA12-labeled.png" alt="Barcode AA12" />
+        <div class="code">AA12</div>
+        <div class="meta">Sandbit A · Bin A · Layer 1 · Pos 2</div>
+      </div>
+      <div class="card">
+        <img src="pipes-barcode/pipe-barcode-AA13-labeled.png" alt="Barcode AA13" />
+        <div class="code">AA13</div>
+        <div class="meta">Sandbit A · Bin A · Layer 1 · Pos 3</div>
+      </div>
+      <div class="card">
+        <img src="pipes-barcode/pipe-barcode-AA14-labeled.png" alt="Barcode AA14" />
+        <div class="code">AA14</div>
+        <div class="meta">Sandbit A · Bin A · Layer 1 · Pos 4</div>
+      </div>
+      <div class="card">
+        <img src="pipes-barcode/pipe-barcode-AA15-labeled.png" alt="Barcode AA15" />
+        <div class="code">AA15</div>
+        <div class="meta">Sandbit A · Bin A · Layer 1 · Pos 5</div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
