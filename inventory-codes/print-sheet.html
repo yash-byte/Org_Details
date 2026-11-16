@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Inventory Codes — Plates QR &amp; Pipes Barcode</title>
+  <style>
+    :root { --ink: #1a1a1a; --muted: #555; --rule: #ddd; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 24px;
+      font-family: "DejaVu Sans", "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: #f7f7f5;
+    }
+    h1 { font-size: 1.4rem; margin: 0 0 4px; }
+    .sub { color: var(--muted); margin: 0 0 20px; font-size: 0.9rem; }
+    section { margin-bottom: 28px; }
+    h2 {
+      font-size: 1.05rem;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 6px;
+      margin: 0 0 14px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid var(--rule);
+      padding: 12px;
+      text-align: center;
+    }
+    .card img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto 8px;
+    }
+    @media print {
+      body { background: #fff; padding: 8mm; }
+      .card { break-inside: avoid; border-color: #bbb; }
+      h1, .sub, h2 { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Inventory codes</h1>
+  <p class="sub">Unlabeled images · Prefer <code>inventory-codes.pdf</code> for printing · Plate order A1-1…A1-5 · Pipe order AA11…AA15</p>
+
+  <section>
+    <h2>Plates — QR (5)</h2>
+    <div class="grid">
+      <div class="card"><img src="plates-qr/plate-qr-A1-1.png" alt="QR A1-1" /></div>
+      <div class="card"><img src="plates-qr/plate-qr-A1-2.png" alt="QR A1-2" /></div>
+      <div class="card"><img src="plates-qr/plate-qr-A1-3.png" alt="QR A1-3" /></div>
+      <div class="card"><img src="plates-qr/plate-qr-A1-4.png" alt="QR A1-4" /></div>
+      <div class="card"><img src="plates-qr/plate-qr-A1-5.png" alt="QR A1-5" /></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Pipes — Barcode Code128 (5)</h2>
+    <div class="grid">
+      <div class="card"><img src="pipes-barcode/pipe-barcode-AA11.png" alt="Barcode AA11" /></div>
+      <div class="card"><img src="pipes-barcode/pipe-barcode-AA12.png" alt="Barcode AA12" /></div>
+      <div class="card"><img src="pipes-barcode/pipe-barcode-AA13.png" alt="Barcode AA13" /></div>
+      <div class="card"><img src="pipes-barcode/pipe-barcode-AA14.png" alt="Barcode AA14" /></div>
+      <div class="card"><img src="pipes-barcode/pipe-barcode-AA15.png" alt="Barcode AA15" /></div>
+    </div>
+  </section>
+</body>
+</html>
