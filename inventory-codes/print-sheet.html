@@ -4,11 +4,7 @@
   <meta charset="utf-8" />
   <title>Inventory Codes — Plates QR &amp; Pipes Barcode</title>
   <style>
-    :root {
-      --ink: #1a1a1a;
-      --muted: #555;
-      --rule: #ddd;
-    }
+    :root { --ink: #1a1a1a; --muted: #555; --rule: #ddd; }
     * { box-sizing: border-box; }
     body {
       margin: 0;
@@ -28,7 +24,7 @@
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
       gap: 16px;
     }
     .card {
@@ -43,77 +39,36 @@
       display: block;
       margin: 0 auto 8px;
     }
-    .code { font-weight: 700; letter-spacing: 0.04em; }
-    .meta { font-size: 0.78rem; color: var(--muted); }
     @media print {
       body { background: #fff; padding: 8mm; }
       .card { break-inside: avoid; border-color: #bbb; }
+      h1, .sub, h2 { display: none; }
     }
   </style>
 </head>
 <body>
   <h1>Inventory codes</h1>
-  <p class="sub">Plate QR = column + row + stack (1–15) · Pipe barcode = sandbit + bin + layer + position (L→R)</p>
+  <p class="sub">Unlabeled images · Prefer <code>inventory-codes.pdf</code> for printing · Plate order A1-1…A1-5 · Pipe order AA11…AA15</p>
 
   <section>
     <h2>Plates — QR (5)</h2>
     <div class="grid">
-      <div class="card">
-        <img src="plates-qr/plate-qr-A11.png" alt="QR A11" />
-        <div class="code">A11</div>
-        <div class="meta">Col A · Row 1 · Stack #1</div>
-      </div>
-      <div class="card">
-        <img src="plates-qr/plate-qr-A12.png" alt="QR A12" />
-        <div class="code">A12</div>
-        <div class="meta">Col A · Row 1 · Stack #2</div>
-      </div>
-      <div class="card">
-        <img src="plates-qr/plate-qr-A13.png" alt="QR A13" />
-        <div class="code">A13</div>
-        <div class="meta">Col A · Row 1 · Stack #3</div>
-      </div>
-      <div class="card">
-        <img src="plates-qr/plate-qr-A14.png" alt="QR A14" />
-        <div class="code">A14</div>
-        <div class="meta">Col A · Row 1 · Stack #4</div>
-      </div>
-      <div class="card">
-        <img src="plates-qr/plate-qr-A15.png" alt="QR A15" />
-        <div class="code">A15</div>
-        <div class="meta">Col A · Row 1 · Stack #5</div>
-      </div>
+      <div class="card"><img src="plates-qr/plate-qr-A1-1.png" alt="QR A1-1" /></div>
+      <div class="card"><img src="plates-qr/plate-qr-A1-2.png" alt="QR A1-2" /></div>
+      <div class="card"><img src="plates-qr/plate-qr-A1-3.png" alt="QR A1-3" /></div>
+      <div class="card"><img src="plates-qr/plate-qr-A1-4.png" alt="QR A1-4" /></div>
+      <div class="card"><img src="plates-qr/plate-qr-A1-5.png" alt="QR A1-5" /></div>
     </div>
   </section>
 
   <section>
     <h2>Pipes — Barcode Code128 (5)</h2>
     <div class="grid">
-      <div class="card">
-        <img src="pipes-barcode/pipe-barcode-AA11-labeled.png" alt="Barcode AA11" />
-        <div class="code">AA11</div>
-        <div class="meta">Sandbit A · Bin A · Layer 1 · Pos 1</div>
-      </div>
-      <div class="card">
-        <img src="pipes-barcode/pipe-barcode-AA12-labeled.png" alt="Barcode AA12" />
-        <div class="code">AA12</div>
-        <div class="meta">Sandbit A · Bin A · Layer 1 · Pos 2</div>
-      </div>
-      <div class="card">
-        <img src="pipes-barcode/pipe-barcode-AA13-labeled.png" alt="Barcode AA13" />
-        <div class="code">AA13</div>
-        <div class="meta">Sandbit A · Bin A · Layer 1 · Pos 3</div>
-      </div>
-      <div class="card">
-        <img src="pipes-barcode/pipe-barcode-AA14-labeled.png" alt="Barcode AA14" />
-        <div class="code">AA14</div>
-        <div class="meta">Sandbit A · Bin A · Layer 1 · Pos 4</div>
-      </div>
-      <div class="card">
-        <img src="pipes-barcode/pipe-barcode-AA15-labeled.png" alt="Barcode AA15" />
-        <div class="code">AA15</div>
-        <div class="meta">Sandbit A · Bin A · Layer 1 · Pos 5</div>
-      </div>
+      <div class="card"><img src="pipes-barcode/pipe-barcode-AA11.png" alt="Barcode AA11" /></div>
+      <div class="card"><img src="pipes-barcode/pipe-barcode-AA12.png" alt="Barcode AA12" /></div>
+      <div class="card"><img src="pipes-barcode/pipe-barcode-AA13.png" alt="Barcode AA13" /></div>
+      <div class="card"><img src="pipes-barcode/pipe-barcode-AA14.png" alt="Barcode AA14" /></div>
+      <div class="card"><img src="pipes-barcode/pipe-barcode-AA15.png" alt="Barcode AA15" /></div>
     </div>
   </section>
 </body>
