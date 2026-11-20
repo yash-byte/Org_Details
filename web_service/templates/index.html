@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Org Details</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <p class="brand">Org Details</p>
+      <p class="tagline">Organization directory web service</p>
+    </header>
+
+    {% if error %}
+    <p class="error" role="alert">{{ error }}</p>
+    {% endif %}
+
+    <main class="fields">
+      <section>
+        <h2>Name</h2>
+        <p class="value">{{ org.name or "—" }}</p>
+      </section>
+      <section>
+        <h2>Address</h2>
+        <p class="value">{{ org.address or "—" }}</p>
+      </section>
+      <section>
+        <h2>Employees</h2>
+        <p class="value">{{ org.employees or "—" }}</p>
+      </section>
+    </main>
+
+    <aside class="api">
+      <h2>API</h2>
+      <ul>
+        <li><code>GET /api/org</code> — full organization payload</li>
+        <li><code>GET /api/name</code></li>
+        <li><code>GET /api/address</code></li>
+        <li><code>GET /api/employees</code></li>
+        <li><code>GET /health</code></li>
+      </ul>
+    </aside>
+  </div>
+</body>
+</html>
